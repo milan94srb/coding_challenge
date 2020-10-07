@@ -1,0 +1,2 @@
+<p>Delete category <%= @category.name %>?</p>
+<%= button_to "Delete", "/categories/#{@category.id}", :method => :delete %>

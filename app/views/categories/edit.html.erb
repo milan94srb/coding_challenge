@@ -1,0 +1,9 @@
+<%= form_for(@category) do |form| %>
+    <%= form.label(:name, "Name")%>
+    <%= form.text_field(:name) %>
+    <%= form.label(:name, "State")%>
+    <%= form.text_field(:state) %>
+    <%= form.label(:vertical_id, "Vertical_ID")%>
+    <%= form.select :vertical_id, @vertical_ids %>
+    <%= form.submit("Update") %>
+<% end %>

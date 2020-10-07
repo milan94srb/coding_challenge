@@ -1,0 +1,11 @@
+<%= form_for(@new_course) do |form| %>
+    <%= form.label(:name, "Name")%>
+    <%= form.text_field(:name) %>
+    <%= form.label(:author, "Author")%>
+    <%= form.text_field(:author) %>
+    <%= form.label(:name, "State")%>
+    <%= form.text_field(:state) %>
+    <%= form.label(:category_id, "Category_ID")%>
+    <%= form.select :category_id, @category_ids %>
+    <%= form.submit("Add") %>
+<% end %>

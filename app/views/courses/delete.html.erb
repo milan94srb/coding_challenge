@@ -1,0 +1,2 @@
+<p>Delete course <%= @course.name %>?</p>
+<%= button_to "Delete", "/courses/#{@course.id}", :method => :delete %>
